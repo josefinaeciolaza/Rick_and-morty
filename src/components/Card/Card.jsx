@@ -1,4 +1,5 @@
 import { ElBoton, Carta } from "./StyleCard";
+import { Link } from "react-router-dom";
 
 // export default function Card(props) {
 //    return (
@@ -18,7 +19,9 @@ export default function Card( {id, name, species, gender, image, onClose}){ //HI
       <Carta>
           <ElBoton onClick={()=>onClose(id)}>X</ElBoton>
           <img src={image} alt=""/>
+          <Link to={`/detail/${id}`}>
           <h2>Name: {name}</h2>
+          </Link>
           <h2>Specie: {species}</h2>
           <h2>Gender: {gender}</h2>
        </Carta>
