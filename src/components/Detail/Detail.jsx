@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { Detalle } from "./StyleDetail";
 //import axios from "axios";
 
 const Detail = () => {
@@ -35,20 +36,21 @@ const Detail = () => {
 //}, []);
 
  return (
-    <div>
+    <Detalle>
       {character.name ? (
         <>
+        <img src={character.image} alt="img" />
           <h2>{character.name}</h2>
-          <p>{character.status}</p>
-          <p>{character.species}</p>
-          <p>{character.gender}</p>
-          <p>{character.origin?.name}</p>
-          <img src={character.image} alt="img" />
+          <h3>{character.status}</h3>
+          <h3>{character.species}</h3>
+          <h3>{character.gender}</h3>
+          <h3>{character.origin?.name}</h3>
+          
         </>
       ) : (
         <h3>Loading...</h3>
       )}
-    </div>
+    </Detalle>
   );
 
 };

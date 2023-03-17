@@ -1,3 +1,5 @@
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,10 +7,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url(https://i.pinimg.com/564x/e9/b2/19/e9b219eace6060547d184f0280fce15d.jpg);
-  /* background-size: cover;
+  background-image: url("C:\Users\ribeiro\Desktop\rick_and_morty\src\imagen\NegraRick.jpeg");
+   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed; */
+  background-attachment: fixed; 
   
 }
 

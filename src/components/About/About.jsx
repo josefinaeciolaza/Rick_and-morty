@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Contenedor } from "./StyleAbout";
 class About extends React.Component {
     // eslint-disable-next-line no-useless-constructor
     constructor(props){
@@ -8,9 +8,10 @@ class About extends React.Component {
 
     render(){
         return(
-            <div>
-                <h1>Me llamo josefina y soy la creadora de esta App</h1>
-            </div>
+            <Contenedor>
+                <h2>La creadora de esta app se llama Josefina Eciolaza</h2>
+                <h3>Su realización es en el marco de una proyecto integrador correspondiente al cursado del bootcamp de SoyHenry</h3>
+            </Contenedor>
         );
     }
 

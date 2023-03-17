@@ -1,6 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 import SearchBar from "../SearchBar/SearchBar";
+import { Barra, ElLink } from "./Nav";
 
 class Nav extends React.Component {
     // eslint-disable-next-line no-useless-constructor
@@ -10,15 +11,16 @@ class Nav extends React.Component {
 
     render(){
         return(
-            <div>
+            <Barra>
                 <SearchBar onSearch={this.props.onSearch}/>
-                <Link to="/about">
-                    <h3>About</h3>
-                </Link>
-                <Link to="/home">
-                    <span>Home</span>
-                </Link>
-            </div>
+                <ElLink to="/home">
+                    <h1>HOME</h1>
+                </ElLink>
+                <ElLink to="/about">
+                    <h2>ABOUT</h2>
+                </ElLink>
+                <ElLink to="/favorites">FAVORITOS</ElLink>
+            </Barra>
         )
     }
 }
