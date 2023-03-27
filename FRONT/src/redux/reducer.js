@@ -2,6 +2,7 @@
  
  const initialState = {
     myFavorites: [],
+    //allCharacters: [],
  };
 
  const elReducer = (state = initialState, action) => {
@@ -9,7 +10,8 @@
         case ADD_PERSONAJE:
             return{
                 ...state,
-                myFavorites:[...state.myFavorites, action.payload]
+                myFavorites:[...state.myFavorites, action.payload],
+                //allCharacters:[...state.myFavorites]
             };
         case DELETE_PERSONAJE:
             return{

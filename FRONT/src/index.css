@@ -7,7 +7,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("C:\Users\ribeiro\Desktop\rick_and_morty\src\imagen\NegraRick.jpeg");
+   background-image: url("./imagen/NegraRick.jpeg");
    background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed; 
